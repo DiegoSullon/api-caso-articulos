@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ArticleRepository extends JpaRepository<Articulo, Integer> {
-
+    public boolean existsByCodigo(String codigo);
 }
